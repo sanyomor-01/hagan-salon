@@ -91,7 +91,7 @@ cd HAGAN-SALON
 
 ## Author
 
-- LinkedIn - [Michael] (www.linkedin.com/in/michael-sanyomor)
+- LinkedIn - [Michael](www.linkedin.com/in/michael-sanyomor)
 - X - [Micheal](https://x.com/sanyo_mor)
 
 ## Acknowledgments

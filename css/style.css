@@ -1,6 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+
+ :root{
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+  --fs-sm: 62.5%;
+  --cl-primary: #FFF1D4;
+  --cl-secondary: #E8BFAE;
+  --cl-ascent: #4A3F35;
+  --cl-primary2: #FFCF85
+ }
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 /* Clear fix hack */
@@ -17,20 +31,184 @@
 	clear: both;
 }
 
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html{
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+}
 body {
-
+  font-family: var(--font-bricolage);
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: calc(100% - 4em);
+		width: 144rem;
+    padding:3rem 12rem;
+	}
+
+
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  /* Header */
+  
+  
+  #header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 6rem;
+    padding:0 6rem;
+    display:grid;
+    align-items: center;
+    background-color:var(--cl-primary) ;
+	}
+
+
+
+  #header > nav .logo{
+    height: 3.2rem;
+}
+nav{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+nav ul li{
+  padding: 1rem 1.6rem;
+}
+
+nav ul li:first-child{
+  background: var(--cl-secondary);
+  
+}
+nav ul li a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--cl-ascent);
+}
+
+#hero{
+  min-height: 90vh;
+  background: url("/images/11_Salon_landscape_01.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #4A3F35;
+}
+#hero .inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+#hero .inner h1{
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.8rem 2.4rem;
+  color: var(--cl-ascent);
+  background-color: var(--cl-secondary);
+}
+#hero .inner span{
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  text-align: center;
+  background-color: var(--cl-primary2);
+}
+#hero .btn{
+  margin-top: 14rem;
+}
+#hero .btn a{
+  padding: 1rem 1.6rem;
+  text-align: center;
+  font-size: 1.8rem;
+  height: 4.8rem;
+  width: 12rem;
+  background-color: var(--cl-ascent);
+  color: #fff;
+  text-decoration: none;
 }
 
 footer {

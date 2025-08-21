@@ -20,19 +20,6 @@
   font-family: "Bricolage Grotesque", sans-serif;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
 /* Utility classes for spacing and layout */
 .m-0 { margin: 0 !important; }
 .p-0 { padding: 0 !important; }

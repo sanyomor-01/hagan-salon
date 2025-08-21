@@ -161,9 +161,11 @@ nav ul li a{
   color: var(--cl-ascent);
 }
 
+
+
 #hero{
   min-height: 90vh;
-  background: url("/images/11_Salon_landscape_01.jpg") center/cover no-repeat;
+  background: url("../images/11_Salon_landscape_01.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;

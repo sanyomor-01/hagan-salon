@@ -34,7 +34,7 @@ By combining both design and development, this project reflects my ability to ta
 ### Live Demo
 
 You can view the live version of the project here:  
-👉 [Salon Website](https://your-username.github.io/salon-website/)
+👉 [Salon Website](https://sanyomor-01.github.io/Hagan-Salon/)
 ![Screenshot](screenshot.png)
 ![Screenshot](screenshot.png)
 

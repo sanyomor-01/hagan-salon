@@ -219,6 +219,7 @@ nav ul li a{
   display: flex;
   flex-direction: row;
   margin-top:3rem;
+  width: 100%;
 }
 
 
@@ -226,14 +227,14 @@ nav ul li a{
   flex: 1;
 }
 
-.container > .what-we-do, #two .span{
+.section-tag{
   text-align: center;
   font-size: 1.4rem;
   padding: 0.4rem 1.2rem;
   border-radius: 5rem;
 }
 
-.container > .what-we-do{
+.what-we-do{
   background: var(--cl-bg2);
   color: var(--cl-ascent-text);
 }
@@ -243,13 +244,28 @@ nav ul li a{
   gap: 10rem;
   align-items: center;
 }
+.mt-md{
+  margin-top: 3rem;
+}
+.mb-sm{
+  margin-bottom: 1.6rem;
+}
+.mt-sm{
+  margin-top: 1.6rem;
+}
 
+.text-sm{
+  font-size: 1.6rem;
+}
 
-.row .content, #two .row.content{
+.text-left{
   text-align: left;
 
 }
 
+.w-100{
+  width: 100%;
+}
 
 .major h2{
   font-size: 4rem;
@@ -288,21 +304,22 @@ nav ul li a{
   background-color: var(--cl-secondary);
 }
 
-#two .span{
+.services-tag , .gallary-tag{
   background-color: var(--cl-primary);
   color: var(--cl-bg3);
 }
 
-div,section{
-  box-sizing: border-box;
-}
+
+
+
 .grid{
   display: grid;
+  width: 100%;
+}
+.grid-style1{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
-  margin-top: 3rem;
-  width: 100%;
   
 }
 .grid-item{
@@ -374,6 +391,70 @@ div,section{
 .events {
   background: url(../images/special-occasions1.jpeg) no-repeat center center / cover;
 }
+
+
+
+/* Gallary*/
+
+
+
+
+.grid-layout-1{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  height:auto;
+}
+
+.round{
+  border-radius: 1.6rem;
+}
+
+.grid-layout-2{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+
+.gallary-1 img,
+.gallary-2 img,
+.gallary-3 img,
+.gallary-4 img,
+.gallary-5 img {
+  width: 100%;         
+  height: 100%;         
+  object-fit: cover;    
+  border-radius: 1.6rem; 
+  display: block;       
+}
+
+.gallary-1 {
+  height: auto; 
+}
+
+
+
+.gallary-2 , .gallary-3, .gallary-4, .gallary-5{
+  height: 25.5rem;
+
+}
+
+.gallary-3 {
+  grid-column: span 2;
+
+
+}
+
+.gallary-4 {
+  grid-column: span 2;
+}
+
+
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

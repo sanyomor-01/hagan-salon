@@ -32,9 +32,9 @@
 .gap-3 { gap: 24px !important; }
 
 /* Consistent column naming */
-.col { flex: 1 1 0; padding: 16px; box-sizing: border-box; }
-.row { display: flex; gap: 16px; margin-bottom: 16px; }
-.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.col { flex: 1 1 0; box-sizing: border-box; }
+.row { display: flex; }
+.container { max-width: 1440px; margin: 0 auto; }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,

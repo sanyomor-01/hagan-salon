@@ -262,9 +262,7 @@ main{
   display: block;
   object-position:center ;
 }
-#cropped{
-  object-position: 30%  80%;
-}
+
 .image-placeholder{
   height: 36rem;
   width: 55rem;

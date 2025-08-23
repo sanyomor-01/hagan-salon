@@ -93,9 +93,8 @@ body {
 
 	.container {
 		margin: 0 auto;
-    text-align: center;
     max-width: 144rem;
-    padding: 3rem 12rem;
+    padding: 8rem 12rem;
 	}
 
 
@@ -113,7 +112,7 @@ body {
 	}
 
 
-  #header > nav .logo{
+  #header  nav .logo{
     height: 3.2rem;
 }
 
@@ -125,11 +124,12 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-
+ ul{
+   list-style-type: none;
+ }
 
 nav ul{
-  display: flex;
-  list-style-type: none;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   gap: 1.6rem;
@@ -147,7 +147,7 @@ nav ul li:first-child{
 }
 
 
-nav ul li a{
+.link{
   text-align: center;
   text-decoration: none;
   font-size: 1.6rem;
@@ -159,6 +159,7 @@ nav ul li a{
 
 #hero{
   min-height: 90vh;
+  position: relative;
   background: url("../images/11_Salon_landscape_01.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -167,41 +168,53 @@ nav ul li a{
   color: var(--cl-ascent);
 }
 
+#hero::after{
+  content: '';
+  position: absolute;
+  /*border-radius: 1.6rem;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1); /* black overlay */
+  z-index: 0; /* overlay stays below text */
+}
 
-#hero .inner{
+.box-1{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
+  z-index: 1;
 }
 
+.index-1{
+  z-index: 1;
+}
 
-#hero .inner h1{
+.headline{
   font-size: 4rem;
-  text-align: center;
   padding: 0.8rem 2.4rem;
   color: var(--cl-ascent);
   background-color: var(--cl-secondary);
 }
 
 
-#hero .inner span{
+.tag-line{
   font-size: 1.6rem;
   padding: 1.2rem 1.6rem;
-  text-align: center;
   background-color: var(--cl-primary2);
 }
 
 
-#hero .btn{
+.mt-l{
   margin-top: 14rem;
 }
 
 
-#hero .btn a{
+.cta{
   padding: 1rem 1.6rem;
-  text-align: center;
   font-size: 1.8rem;
   height: 4.8rem;
   width: 12rem;
@@ -231,7 +244,6 @@ nav ul li a{
 }
 
 .section-tag{
-  text-align: center;
   font-size: 1.4rem;
   padding: 0.4rem 1.2rem;
   border-radius: 5rem;
@@ -256,7 +268,9 @@ nav ul li a{
 .mt-sm{
   margin-top: 1.6rem;
 }
-
+.mb-md{
+  margin-bottom: 2.4rem;
+}
 .text-sm{
   font-size: 1.6rem;
 }
@@ -265,6 +279,9 @@ nav ul li a{
   text-align: left;
 
 }
+.text-center{
+  text-align: center;
+}
 
 .w-100{
   width: 100%;
@@ -272,7 +289,6 @@ nav ul li a{
 
 .major h2{
   font-size: 4rem;
-  color: var(--cl-ascent);
   margin-bottom: 2.4rem;
   line-height: 1.2;
 }
@@ -287,7 +303,7 @@ nav ul li a{
 .image-placeholder img{
   width: 100%;
   height: 100%;
-  border-radius: 1.6rem;
+  /*border-radius: 1.6rem;*/
   object-fit: cover;
   display: block;
   object-position:center ;
@@ -297,7 +313,7 @@ nav ul li a{
 .image-placeholder{
   height: 36rem;
   width: 55rem;
-  border-radius: 1.6rem;
+  /*border-radius: 1.6rem;*/
 }
 
 
@@ -307,7 +323,7 @@ nav ul li a{
   background-color: var(--cl-secondary);
 }
 
-.services-tag , .gallary-tag{
+.services-tag , .gallary-tag, .booking-tag{
   background-color: var(--cl-primary);
   color: var(--cl-bg3);
 }
@@ -338,7 +354,7 @@ nav ul li a{
 .grid-item::after {
   content: '';
   position: absolute;
-  border-radius: 1.6rem;
+  /*border-radius: 1.6rem;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -432,14 +448,13 @@ nav ul li a{
   width: 100%;         
   height: 100%;         
   object-fit: cover;    
-  border-radius: 1.6rem; 
+  /*border-radius: 1.6rem; */
   display: block;       
 }
 
 .gallary-1 {
   height: auto; 
 }
-
 
 
 .gallary-2 , .gallary-3, .gallary-4, .gallary-5{
@@ -457,7 +472,85 @@ nav ul li a{
   grid-column: span 2;
 }
 
+/* booking */
 
+#four{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("../images/image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.z-index-1{
+  z-index: 1;
+}
+.justify-center{
+  justify-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-md{
+  gap: 4rem;
+}
+.semi-bold{
+  font-weight: 600;
+}
+.p-1{
+  padding: 1rem;
+}
+.fw-light{
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+
+.line-through{
+  text-decoration: line-through;
+}
+.location-name{
+  color: var(--cl-ascent);
+  background-color: var(--cl-secondary);
+  width: max-content;
+}
+
+.a-btn{
+  width: 20rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cta-2{
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--cl-ascent);
+
+}
+
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.white{
+  color: #fff;
+}
+.contact{
+    background-color: var(--cl-primary2);
+}
+.contact-us{
+  border: 0.05rem solid #fff;
+}
 
 
 /******************************************

@@ -171,13 +171,13 @@ nav ul li:first-child{
 #hero::after{
   content: '';
   position: absolute;
-  /*border-radius: 1.6rem;*/
+  border-radius: 1.6rem;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.1); /* black overlay */
-  z-index: 0; /* overlay stays below text */
+  background: rgba(0,0,0,0.1); 
+  z-index: 0; 
 }
 
 .box-1{
@@ -303,7 +303,7 @@ nav ul li:first-child{
 .image-placeholder img{
   width: 100%;
   height: 100%;
-  /*border-radius: 1.6rem;*/
+  border-radius: 1.6rem;
   object-fit: cover;
   display: block;
   object-position:center ;
@@ -313,7 +313,7 @@ nav ul li:first-child{
 .image-placeholder{
   height: 36rem;
   width: 55rem;
-  /*border-radius: 1.6rem;*/
+  border-radius: 1.6rem;
 }
 
 
@@ -354,7 +354,7 @@ nav ul li:first-child{
 .grid-item::after {
   content: '';
   position: absolute;
-  /*border-radius: 1.6rem;*/
+  border-radius: 1.6rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -448,7 +448,7 @@ nav ul li:first-child{
   width: 100%;         
   height: 100%;         
   object-fit: cover;    
-  /*border-radius: 1.6rem; */
+  border-radius: 1.6rem; 
   display: block;       
 }
 

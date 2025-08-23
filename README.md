@@ -7,8 +7,7 @@ It showcases salon services, pricing, and a booking/contact section, making it a
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Live Demo](#live-demo)
 - [Features](#Features)
 - [My process](#my-process)
 - [Built with](#Technologies-used)
@@ -27,16 +26,12 @@ It was also a great opportunity to strengthen my JavaScript skills by adding int
 
 By combining both design and development, this project reflects my ability to take an idea from concept to execution — from creating the UI design to coding the final product.
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Live Demo
 
 You can view the live version of the project here:  
-👉 [Salon Website](https://sanyomor-01.github.io/Hagan-Salon/)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
+👉 [Salon Website](https://sanyomor-01.github.io/hagan-salon/)
+![Screenshot](./images/screencapture-1png.png)
+![Screenshot](./images/screencapture-02.png)
 
 ## My Process
 
@@ -91,9 +86,9 @@ cd HAGAN-SALON
 
 ## Author
 
-- LinkedIn - [Michael](www.linkedin.com/in/michael-sanyomor)
-- X - [Micheal](https://x.com/sanyo_mor)
+- [LinkedIn](https://www.linkedin.com/in/michael-sanyomor/)
+- [X Corp](https://x.com/sanyo_mor)
 
 ## Acknowledgments
 
-- Thanks to 100Devs Bootcamp and [Leon Noel](https)for guidance and inspiration.
+- Thanks to 100Devs Bootcamp and [Leon Noel](https://x.com/leonnoel) for organizing this bootcamp and providing indepth knowledge in software development #We Go Get.

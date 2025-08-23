@@ -290,9 +290,12 @@ nav ul li:first-child{
 .major h2{
   font-size: 4rem;
   margin-bottom: 2.4rem;
+  color: var(--cl-ascent);
   line-height: 1.2;
 }
-
+.major .white{
+  color: white;
+}
 
 .row p{
   font-size: 1.6rem;
@@ -552,6 +555,43 @@ nav ul li:first-child{
   border: 0.05rem solid #fff;
 }
 
+
+/* footer */
+
+footer{
+    background-color: var(--cl-ascent);
+}
+
+.socials{
+  display: flex;
+  gap: 2.4rem;
+}
+.border-green{
+  border: 1px solid green;
+}
+.mt-5{
+  margin-top: 5rem;
+}
+.author{
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.author a{
+  letter-spacing: 0.2rem;
+  text-decoration:none;
+  border-bottom: 1px dotted white;
+  color: white;
+  font-size: 2.4rem;
+}
+.special {
+  font-size: 2.4rem;
+}
+.white-line{
+  background-color: #fff;
+  width: 0.05rem;
+  height: 1.6rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES

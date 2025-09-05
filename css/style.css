@@ -219,16 +219,20 @@ nav ul li {
   padding: 1rem 1.6rem;
 }
 
-nav ul li:first-child {
-  background: var(--cl-secondary);
+li.active {
+  border-radius: 0.05rem;
+  background-color: var(--cl-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .link {
+  display: block;
   text-align: center;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--cl-ascent);
+  transition: backgroud-color 0.3s ease;
 }
 
 .hero {

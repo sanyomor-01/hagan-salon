@@ -6,15 +6,36 @@ class SpecialHeader extends HTMLElement {
                 <img src="./images/default-monochrome-black 1.svg" alt="hair" />
                 </div>
                 <ul>
-                <li><a class="link active" href="index.html">Home</a></li>
-                <li><a class="link" href="about.html">Our Story</a></li>
-                <li><a class="link" href="index.html">Contact</a></li>
+                <li > <a class = "link" href="index.html">Home</a></li>
+                <li> <a class = "link" href="about.html">Our Story</a></li>
+                <li> <a class = "link" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
     </header>
-`
+
+    `
+
+
+        const navItems = this.querySelectorAll('li');
+        let currentPath = window.location.pathname.split("/").pop();
+
+        navItems.forEach(item => {
+            const link = item.querySelector("a");
+
+            if (link.getAttribute('href') === currentPath) {
+                item.classList.add("active");
+            }
+
+            link.addEventListener("click", function () {
+                navItems.forEach(i => i.classList.remove("active"));
+                item.classList.add("active");
+            });
+        });
+
     }
+
 }
+
 
 class SpecialFooter extends HTMLElement {
     connectedCallback() {
@@ -104,6 +125,33 @@ class Booking extends HTMLElement {
     }
 }
 
+class OfficeHours extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <div class="row gap">
+          <div class="col text-left order-2">
+            <header class="major w-100 white">
+              <h2>
+                Salon Hours
+            </header>
+            <p>Tuesdays - Sunday  9am - 7pm</p>
+            <br>
+            <p>
+             We work by appointment only to give each client the time and attention they deserve.<br />
+             <br>
+              No walk-ins — please schedule in advance to secure your spot.
+            </p>
+          </div>
+
+          <div class="col image-placeholder order-1">
+            <img src="./images/image 1.jpg" alt="salon-sofa" />
+          </div>
+        </div>
+        
+        `
+    }
+}
+customElements.define('special-office-hours', OfficeHours)
 customElements.define('special-booking', Booking)
 customElements.define('special-header', SpecialHeader)
 customElements.define('special-footer', SpecialFooter)

@@ -226,9 +226,7 @@ nav ul {
   background-color: var(--cl-secondary);
   transition: background-color 0.2s ease;
 }
-.link:hover {
-  background-color: var(--cl-hover);
-}
+
 .link {
   display: block;
   padding: 1rem 1.6rem;
@@ -759,7 +757,6 @@ footer {
     flex-wrap: wrap;
     row-gap: 0.6rem;
     padding: 0 1.2rem;
-    overflow: hidden;
     position: relative;
   }
 
@@ -780,9 +777,17 @@ footer {
     align-items: self-start;
     text-align: left;
     background: var(--cl-primary);
+
+    display: none;
   }
+
+  nav ul.open {
+    display: block;
+  }
+
   .active {
     border-radius: 40rem;
+    background-color: var(--cl-secondary);
     width: 100%;
   }
 

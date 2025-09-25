@@ -17,21 +17,14 @@ class SpecialHeader extends HTMLElement {
     </header>
 
     `
-    let menuIcon = document.querySelector('.menu-icon')
-    let nav = document.querySelector('nav')
+    const navList = this.querySelector("ul");
+    const menuIcon = this.querySelector(".menu-icon");
 
 
-    menuIcon.addEventListener('click', toggleMenu)
+    menuIcon.addEventListener("click", () => {
+      navList.classList.toggle("open");
+    });
 
-    function toggleMenu() {
-      if (nav.style.overflow == 'hidden') {
-        nav.style.overflow = 'visible'
-      }
-
-      else {
-        nav.style.overflow = 'hidden'
-      }
-    }
 
 
 

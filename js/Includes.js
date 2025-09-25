@@ -11,7 +11,7 @@ class SpecialHeader extends HTMLElement {
                   <li> <a class = "link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class = "menu-icon">
-                  <img src = "../images/shapes/menu.svg" alt = "humburger icon"> 
+                  <img src = "./images/shapes/menu.svg" alt = "humburger icon"> 
                 </div>
             </nav>
     </header>
@@ -133,7 +133,7 @@ class Booking extends HTMLElement {
                 <a class="cta-2" href="">+1 903 033 2343</a>
               </li>
               <li class="contact-us a-btn text-center">
-                <a class="cta-2 white" href="../contact.html">CONTACT US</a>
+                <a class="cta-2 white" href="./contact.html">CONTACT US</a>
               </li>
             </ul>
           </div>

@@ -9,6 +9,7 @@
   --cl-bg3: #fea539;
   --cl-ascent-text: #b76b4b;
   --cl-secondary: #e8bfae;
+  --cl-hover: #f4ddd4;
   --cl-ascent: #4a3f35;
   --cl-primary2: #ffcf85;
 }
@@ -216,28 +217,28 @@ nav ul {
   gap: 1.6rem;
 }
 
-nav ul li {
-  padding: 1rem 1.6rem;
-}
-
 .menu-icon {
   display: none;
 }
 
-li.active {
+.active {
   border-radius: 0.05rem;
   background-color: var(--cl-secondary);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
-
+.link:hover {
+  background-color: var(--cl-hover);
+}
 .link {
   display: block;
+  padding: 1rem 1.6rem;
   text-align: center;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
+
   color: var(--cl-ascent);
-  transition: backgroud-color 0.3s ease;
+  transition: backgroud-color 0.2s ease;
 }
 
 .hero {
@@ -690,7 +691,7 @@ footer {
     gap: 1.2rem;
   }
 
-  nav ul li {
+  .link {
     padding: 0.6rem 1rem;
   }
 
@@ -780,21 +781,14 @@ footer {
     text-align: left;
     background: var(--cl-primary);
   }
-
-  nav ul li {
-    padding: 1.6rem;
-    width: 100%;
-  }
-  li.active {
+  .active {
     border-radius: 40rem;
-    background-color: transparent;
-  }
-  li.active:active {
-    background-color: var(--cl-secondary);
+    width: 100%;
   }
 
   .link {
     text-align: left;
+    padding: 1.6rem;
     width: 100%;
   }
 

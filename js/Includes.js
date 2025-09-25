@@ -1,45 +1,65 @@
 class SpecialHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `<header id="header">
+  connectedCallback() {
+    this.innerHTML = `<header id="header">
             <nav>
                 <div class="logo">
-                <img src="./images/default-monochrome-black 1.svg" alt="hair" />
+                  <img src="./images/default-monochrome-black 1.svg" alt="hair" />
                 </div>
-                <ul>
-                <li > <a class = "link" href="index.html">Home</a></li>
-                <li> <a class = "link" href="about.html">Our Story</a></li>
-                <li> <a class = "link" href="contact.html">Contact</a></li>
+                <ul id = 'menuList'>
+                  <li > <a class = "link" href="index.html">Home</a></li>
+                  <li> <a class = "link" href="about.html">Our Story</a></li>
+                  <li> <a class = "link" href="contact.html">Contact</a></li>
                 </ul>
+                <div class = "menu-icon">
+                  <img src = "../images/shapes/menu.svg" alt = "humburger icon"> 
+                </div>
             </nav>
     </header>
 
     `
+    let menuIcon = document.querySelector('.menu-icon')
+    let nav = document.querySelector('nav')
 
 
-        const navItems = this.querySelectorAll('li');
-        let currentPath = window.location.pathname.split("/").pop();
+    menuIcon.addEventListener('click', toggleMenu)
 
-        navItems.forEach(item => {
-            const link = item.querySelector("a");
+    function toggleMenu() {
+      if (nav.style.overflow == 'hidden') {
+        nav.style.overflow = 'visible'
+      }
 
-            if (link.getAttribute('href') === currentPath) {
-                item.classList.add("active");
-            }
-
-            link.addEventListener("click", function () {
-                navItems.forEach(i => i.classList.remove("active"));
-                item.classList.add("active");
-            });
-        });
-
+      else {
+        nav.style.overflow = 'hidden'
+      }
     }
+
+
+
+
+    const navItems = this.querySelectorAll('li');
+    let currentPath = window.location.pathname.split("/").pop();
+
+    navItems.forEach(item => {
+      const link = item.querySelector("a");
+
+      if (link.getAttribute('href') === currentPath) {
+        item.classList.add("active");
+      }
+
+      link.addEventListener("click", function () {
+        navItems.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+      });
+    });
+
+  }
 
 }
 
 
 class SpecialFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <footer id="footer white">
             <section class="container">
                 <div class="row justify-center">
@@ -81,13 +101,13 @@ class SpecialFooter extends HTMLElement {
             </section>
     </footer>
         `
-    }
+  }
 }
 
 
 class Booking extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
               <section id="four">
       <div class="container text-center">
         <span class="section-tag booking-tag text-center">Booking</span>
@@ -113,7 +133,7 @@ class Booking extends HTMLElement {
                 <a class="cta-2" href="">+1 903 033 2343</a>
               </li>
               <li class="contact-us a-btn text-center">
-                <a class="cta-2 white" href="">CONTACT US</a>
+                <a class="cta-2 white" href="../contact.html">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -122,12 +142,12 @@ class Booking extends HTMLElement {
     </section>
         
         `
-    }
+  }
 }
 
 class OfficeHours extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <div class="row gap">
           <div class="col text-left order-2">
             <header class="major w-100 white">
@@ -149,7 +169,7 @@ class OfficeHours extends HTMLElement {
         </div>
         
         `
-    }
+  }
 }
 customElements.define('special-office-hours', OfficeHours)
 customElements.define('special-booking', Booking)

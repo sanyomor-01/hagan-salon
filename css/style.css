@@ -789,7 +789,7 @@ footer {
     border-radius: 40rem;
     background-color: transparent;
   }
-  li.active:hover {
+  li.active:active {
     background-color: var(--cl-secondary);
   }
 
